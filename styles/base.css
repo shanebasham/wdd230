@@ -18,29 +18,48 @@ img {
 }
 
 header a {
-    grid-template-columns: repeat(3,1fr);
-    display: grid;
     font-family: "Lucida Console", "Courier New", monospace;
+    display: inline-block;
     text-decoration: none;
     color: white;
 }
-h1 {
-    z-index: 1000;
-}
 header {
+    padding-top: 15px;
     display: flex;
     justify-content: space-around;
-    padding: 25px;
+    padding: 15px;
     color: white;
     background-color: black;
     text-decoration: none;
+    text-align: center;
     border: 4px solid white;
+}
+nav {
+    background-color: black;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+.nav-link:hover {
+    color: aqua;
+    cursor: pointer;
 }
 
 
 
-
-.icon-1.a {
+/* .icon-1.a {
   transform: rotate(40deg);
 }
 .icon-3.b {
@@ -145,7 +164,7 @@ nav.show {
         text-decoration: none;
         cursor: pointer;
     }
-}
+} */
 
 /* .blue {
     display: flex;
@@ -172,7 +191,6 @@ html, body {
 }
 main {
     margin: 25px;
-    text-align: center;
 }
 h2 {
     text-align: center;
@@ -197,16 +215,17 @@ h3 {
     padding: 25px;
     margin: 0px;
 }
-section {
-    display: inline-block;
-    /* vertical-align: middle; */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    margin: 0 auto;
+    width: 75%;
 }
 section.card  {
     border: 4px solid black;
-    height: 100%;
 }
 form {
-    margin: 0 auto;
     align-self: center;
 }
 ul {
@@ -269,39 +288,101 @@ a:-webkit-any-link {
 img {
     display: block;
     margin: auto;
-    z-index: 1000000;
-}
-h1 {
-    z-index: 1000000;
 }
 header {
     display: block;
     text-align: center;
 }
-.hamburger-icon {
-    display: none;
-}
-nav {
-    position: relative;
-    display: inline-block;
-    flex-direction: column;
-    opacity: 1;
-    border: 4px solid white;
-    ul {
-        z-index: 10;
-        background: black;
-        display: block;
-        li {
-            display: block;
-            margin: auto;
-        }
-    }
-}
-.card  {
-    display: block;
-    border: 4px solid black;
-    width: 50%;
+.icon-1.a {
+    transform: rotate(40deg);
+  }
+  .icon-3.b {
+    transform: rotate(-40deg);
+  }
+  .icon-2.c {
+    opacity: 0;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  .icon-1, .icon-2, .icon-3 {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      width: 32px;
+      height: 3px;
+      background-color: white;
+      transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+  }
+  .icon-1 {
+    transform: translateY(-8px);
+    animation-delay: 100ms;
+  }
+  .icon-3 {
+    transform: translateY(8px);
+    animation-delay: 250ms;
+  }
+  
+  .hamburger-icon {
     margin: auto;
-    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  
+  .icon-1.a {
+    transform: rotate(40deg);
+  }
+  .icon-3.b {
+    transform: rotate(-40deg);
+  }
+  .icon-2.c {
+    opacity: 0;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  nav {
+    height: 0%;
+    opacity: 0;
+    transition: all 500ms cubic-bezier(.6,.4,.3,1.5);
+    transition-delay: 100ms;
+    border: 4px solid white;
+  }
+ul.nav-link {
+    display: block;
+    text-align: center;
+    margin: auto; 
+}
+li.nav-link {
+    display: block;
+    list-style: none;
+    font-size: 24px;
+    color: #fff;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+nav.show {
+    padding: 4px;
+    height: 35%;
+    opacity: 1;
+}
+.grid  {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    row-gap: 25px;
 }
 }
