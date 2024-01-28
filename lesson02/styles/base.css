@@ -34,8 +34,6 @@ header {
     border: 4px solid white;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
     background-color: black;
     border-left: 4px solid white;
     border-right: 4px solid white;
@@ -45,16 +43,18 @@ nav {
     padding-top: 10px;
     text-align: center;
 }
-nav a {
+.nav-link {
     display: flex;
+    justify-content: space-between;
     color: white;
     text-decoration: none;
+    list-style: none;
+    align-items: center;
     text-align: center;
-    margin: 10px;
 }
-nav a:hover{
+.nav-link:hover {
     color: aqua;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 html, body {
@@ -88,32 +88,17 @@ h3 {
     margin: 0px;
 }
 section {
+    display: grid;
     margin: 25px;
 }
 .card  {
     border: 4px solid black;
 }
-form {
-    margin: 0 auto;
-    align-self: center;
-}
-ul {
-    text-align: center;
-    align-self: center;
-    list-style: none;
-    margin: 25px;
-    padding-inline-start: 0px;
-}
-form li {
-    padding: 0px;
-    align-self: center;
-}
-ul a {
-    color: black;
-}
-ul a:hover{
-    color: aqua;
-    text-decoration: none;
+img.card-screenshot {
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
 }
 p {
     margin: 0 auto;
@@ -172,20 +157,103 @@ header {
     display: block;
     text-align: center;
 }
-nav {
+
+.icon-1.a {
+    transform: rotate(40deg);
+  }
+  .icon-3.b {
+    transform: rotate(-40deg);
+  }
+  .icon-2.c {
+    opacity: 0;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  .icon-1, .icon-2, .icon-3 {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      width: 32px;
+      height: 3px;
+      background-color: white;
+      transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+  }
+
+  .icon-1 {
+    transform: translateY(-8px);
+    animation-delay: 100ms;
+  }
+  .icon-3 {
+    transform: translateY(8px);
+    animation-delay: 250ms;
+  }
+  
+  .hamburger-icon {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+  }
+.hamburger-icon:hover {
+    transform: scale(1.2);
+}
+  
+  .icon-1.a {
+    transform: rotate(40deg);
+  }
+  .icon-3.b {
+    transform: rotate(-40deg);
+  }
+  .icon-2.c {
+    opacity: 0;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  nav {
+    height: 0%;
+    opacity: 0;
+    transition: all 500ms cubic-bezier(.6,.4,.3,1.5);
+    transition-delay: 100ms;
+    border: 4px solid white;
+  }
+.nav-link {
     display: block;
     text-align: center;
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-nav a {
-    display: block;
+.nav-link:hover {
+    cursor: default;
 }
+nav.show {
+    padding: 4px;
+    height: 35%;
+    opacity: 1;
+}
+nav.show:hover {
+    cursor: pointer;
+}
+
 main {
     grid-template-columns: auto;
 }
 .card  {
     display: block;
     border: 4px solid black;
-    width: 50%;
+    width: 75%;
     margin: auto;
     margin-top: 20px;
 }

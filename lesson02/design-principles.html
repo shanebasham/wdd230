@@ -20,32 +20,45 @@
     <header>
         <img src="images/me.jpg" alt="Me">
         <h1>Shane Basham</h1>
+        <div class="hamburger-icon" id="icon">
+            <div class="icon-1" id="a"></div>
+            <div class="icon-2" id="b"></div>
+            <div class="icon-3" id="c"></div>
+            <div class="clear"></div>
+        </div>
     </header>
-    <nav>
-        <a href="https://shanebasham.github.io/wdd230/index.html">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng">Scripture</a>
+    <nav id="nav">
+        <ul class="nav-link">
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/index.html">Home</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/lesson03/chamber.html">Chamber</a></li>
+            <li><a class="nav-link" href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a class="nav-link" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng">Scripture</a></li>
+        </ul>
     </nav>
+    <!-- <div class="blue" id="blue"></div> -->
+    <script src="scripts/hamburger.js"></script>
     <main>
         <section class="card">
-            <h3>Design Principle</h3>
-            <a class="card-link" href="https://www.example.com">Visit Website</a>
-            <img class="card-screenshot" src="screenshot.png" alt="Mobile view screenshot of Example Organization's web page">
-            <p class="card-description">Description on how the design principle is exemplified on that page</p>
+            <h3>Visual Hierarchy</h3>
+            <h4>Mutual</h4>
+            <a class="card-link" href="https://mutual.app/?utm_source=google_max&utm_medium=max&campaign=20976020291&utm_term=&gclid=CjwKCAiA8NKtBhBtEiwAq5aX2NUewng55qGlB5gHFne35y1Xb3_1wxKgvGUT-WMiAY_Icz83R_45XhoCHtAQAvD_BwE">mutual.app</a>
+            <img class="card-screenshot" src="images/mutual.jpg" alt="Mobile view screenshot of Example Organization's web page">
+            <p class="card-description">This website uses Visual Hierarchy to direct the users to the most important information and buttons to create an account and download the app.</p>
         </section>
         <section class="card">
-            <h3>Design Principle</h3>
-            <a class="card-link" href="https://www.example.com" target="_blank">Visit Website</a>
-            <img class="card-screenshot" src="screenshot.png" alt="Mobile view screenshot of Example Organization's web page">
-            <p class="card-description">Description on how the design principle is exemplified on that page</p>
+            <h3>Fitts Law</h3>
+            <h4>Tinder</h4>
+            <a class="card-link" href="https://tinder.com/" target="_blank">tinder.com</a>
+            <img class="card-screenshot" src="images/tinder.jpg" alt="Mobile view screenshot of Example Organization's web page">
+            <p class="card-description">This website uses Fitts Law to place the download and create account buttons closest to where you would predict the users finger to be, minimizing the time it would take to tap the buttons.</p>
         </section>
         <section class="card">
-            <h3>Design Principle</h3>
-            <a class="card-link" href="https://www.example.com" target="_blank">Visit Website</a>
-            <img class="card-screenshot" src="screenshot.png" alt="Mobile view screenshot of Example Organization's web page">
-            <p class="card-description">Description on how the design principle is exemplified on that page</p>
+            <h3>White Space</h3>
+            <h4>Hinge</h4>
+            <a class="card-link" href="https://hinge.co/" target="_blank">hinge.co</a>
+            <img class="card-screenshot" src="images/hinge.jpg" alt="Mobile view screenshot of Example Organization's web page">
+            <p class="card-description">This website has a very good use of white space and a clean design that is inviting and influences and convinces the users to want to download the app and use the product.</p>
         </section>
     </main>
     <footer>
