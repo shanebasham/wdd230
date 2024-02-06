@@ -24,31 +24,48 @@ header a {
     color: white;
 }
 header {
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 25px;
     color: white;
     background-color: black;
     text-decoration: none;
     text-align: center;
+    opacity: 0.75;
 }
-nav {
-    overflow: hidden;
-    background-color: #333;
-    
-  }
-  
-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+#main-nav {
+    position: relative;
+    z-index: 10;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+    opacity: 0.75;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    padding: 14px 16px;
+    width: 100%;
+    z-index: 1000;
+    /* border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%; */
+  } 
+  nav a {
+    display: inline;
+    color: white;
     text-decoration: none;
-    font-size: 17px;
-}
+    text-align: center;
+    margin: 50px;
+  }
+  #main-nav.sticky {
+    position: fixed;
+    top: 0;
+  }
+  .navbarOffsetMargin {
+    padding-top: 45px;
+  }
 nav a:hover{
-    color: aqua;
+    color: red;
     text-decoration: none;
 }
 
@@ -58,21 +75,36 @@ html, body {
     margin: 0px;
     background-color: white;
 }
-main {
-    margin: 25px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}
-main img{
+#welcome img{
     position: absolute;
     left: 0;
+    top: 0;
     padding: 0px;
     margin: 0px;
     border-radius: 0%;
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+#welcome p{
+    position: relative;
+    z-index: 10;
+    font-family: monospace;
+    color: white;
+    background-color: gray;
+    opacity: 0.75;
+    border-radius: 50%;
+    font-size: 50px;
+    margin-top: 300px;
+}
+main {
+    position: relative;
+    z-index: 10;
+    margin: 25px;
+    margin-top: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 h2 {
     text-align: center;
@@ -93,7 +125,7 @@ h3 {
     margin: 0px;
 }
 section {
-    margin: 25px;
+    margin-bottom: 25px;
 }
 .card  {
     border: 4px solid black;
