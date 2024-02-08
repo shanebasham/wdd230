@@ -1,4 +1,4 @@
-let navbar = document.getElementById("main-nav");
+let navbar = document.getElementById("nav");
 
 let navPos = navbar.getBoundingClientRect().top;
 

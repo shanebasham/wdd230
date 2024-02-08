@@ -3,12 +3,10 @@
 html {
     scroll-behavior: smooth;
 }
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-
 img {
     display: flex;
     border-radius: 50%;
@@ -34,6 +32,8 @@ header {
     text-align: center;
     border: 4px solid white;
 }
+
+                               /* nav */
 nav {
     background-color: black;
     border-left: 4px solid white;
@@ -57,132 +57,7 @@ nav {
     cursor: pointer;
 }
 
-
-
-/* .icon-1.a {
-  transform: rotate(40deg);
-}
-.icon-3.b {
-  transform: rotate(-40deg);
-}
-.icon-2.c {
-  opacity: 0;
-}
-.clear {
-  clear: both;
-}
-
-.icon-1, .icon-2, .icon-3 {
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    width: 32px;
-    height: 3px;
-    background-color: white;
-    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
-}
-.icon-1 {
-  transform: translateY(-8px);
-  animation-delay: 100ms;
-}
-.icon-3 {
-  transform: translateY(8px);
-  animation-delay: 250ms;
-}
-
-.hamburger-icon {
-  margin: auto;
-  position: relative;
-  text-align: center;
-  height: 60px;
-  width: 60px;
-  z-index: 1000;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.icon-1.a {
-  transform: rotate(40deg);
-}
-.icon-3.b {
-  transform: rotate(-40deg);
-}
-.icon-2.c {
-  opacity: 0;
-}
-.clear {
-  clear: both;
-}
-
-nav {
-  background: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  z-index: 10;
-  opacity: 0;
-  transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
-  transition-delay: 100ms;
-  border: 4px solid white;
-  ul {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-
-    li {
-      display: flex;
-      list-style: none;
-      font-size: 24px;
-      color: #fff;
-      margin: auto;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-    }
-  }
-}
-nav.show {
-    padding: 4px;
-    height: 30%;
-    opacity: 1;
-    li:hover{
-        color: aqua;
-        text-decoration: none;
-        cursor: pointer;
-    }
-} */
-
-/* .blue {
-    display: flex;
-    background: aqua;
-    height: 0%;
-    width: 100%;
-    transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
-    transition-delay: 50ms;
-    z-index: 5;
-    opacity: 1;
-    border: 4px solid white;
-}
-.blue.slide {
-    height: 55%;
-    opacity: 1;
-} */
-
-
+                              /* body */
 html, body {
     width: 100%;
     height: 100%;
