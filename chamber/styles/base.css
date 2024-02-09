@@ -58,7 +58,8 @@ button.login {
     font-family: "Comic Neue", Helvetica, sans-serif;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    top: 0;
+    z-index: 1000000000000000; /* Sit on top */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -300,9 +301,22 @@ img {
     margin: auto;
 }
 header {
+    padding-top: 75px;
     display: block;
     text-align: center;
 }
+#welcome img {
+    padding-top: 200px;
+}
+#welcome p {
+    position: absolute;
+}
+button.login {
+    position: absolute;
+    top: 25px;
+    transform: translate(-50%);
+}
+
 .icon-1.a {
     transform: rotate(40deg);
   }
@@ -381,10 +395,11 @@ header {
 }
 .nav-link:hover {
     cursor: default;
+    pointer-events: none
 }
 nav.show {
     padding: 4px;
-    height: 35%;
+    height: 28%;
     opacity: 1;
 }
 nav.show:hover {
