@@ -14,38 +14,6 @@ img {
     height: 80px;
     z-index: 1000;
 }
-.hero {
-	margin: 10px auto;
-	position: relative;
-	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
-}
-
-.hero img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-    border-radius: 0%;
-}
-
-.herolabel {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	background: radial-gradient(#fff, aqua);
-	padding: 1.5rem;
-    border: solid black;
-	box-shadow: 0 0 3rem #fff;
-    border-radius: 50%;
-}
-
-.herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 1.5rem;
-	font-family:"Great Vibes", serif;
-}
 
 header a {
     font-family: "Lucida Console", "Courier New", monospace;
@@ -115,7 +83,7 @@ hr.solid {
 h3 {
     display: block;
     color: black;
-    background: radial-gradient(#fff, aqua);
+    background-color: aqua;
     border-bottom: 4px solid black;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
