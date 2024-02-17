@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Name - WDD 230 - Web Frontend Development</title>
+    <title>Student Name - WDD 230 - Web Frontend Development Chamber of Commerce Assignment</title>
     <meta name="author" content="Shane Basham">
     <meta
         name="description"
@@ -16,7 +16,7 @@
     <link href="styles/base.css" rel="stylesheet" >
     <link href="styles/medium.css" rel="stylesheet" >
     <link href="styles/larger.css" rel="stylesheet" >
-    <link rel="icon1" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
@@ -129,9 +129,12 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077813.4715538276!2d17.385760932684985!3d41.1197400152456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453bf3bd274c2d%3A0x77ce589d6983bee!2sAlbania!5e0!3m2!1sen!2sus!4v1706859853044!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
             </div>
             <div class="weather">
-                <p>Current temperature: 72°F</p>
+                <p>Current temperature: <span id="temperature">47</span>°F</p>
                 <p>Conditions: Sunny</p>
                 <p>Humidity: 10%</p>
+                <p>Windspeed: <span id="windSpeed">6</span>mph</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <script src="scripts/windchill.js"></script>
             </div>
         </section>
     <footer>
