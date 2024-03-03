@@ -21,7 +21,7 @@
 <body>
     <header>
         <div id="mode">
-            💡/🕶️
+            🕶️
         </div>
         <img src="images/albania.png" alt="Albania">
         <h1>Albania Chamber of Commerce</h1>
@@ -80,94 +80,38 @@
     <nav id="nav">
         <ul class="nav-link">
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/index.html">Home</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a class="nav-link" href="lesson04/">Discover</a></li>
             <li><a class="nav-link" href="lesson04/">Directory</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">JOIN</a></li>
+            <li><a class="nav-link" href="lesson04/">JOIN</a></li>
         </ul>
     </nav>
-    <script>
-        const modeButton = document.querySelector("#mode");
-        const body = document.querySelector("body");
-        const main = document.querySelector("main");
-
-        modeButton.addEventListener("click", () => {
-          body.classList.toggle('dark-mode');
-          main.classList.toggle('dark-mode');
-        });
-      </script>
-      <style>
-        #mode {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 3rem;
-            cursor: pointer;
-            font-size: 1.5rem;
-        }
-        
-        .dark-mode {
-            background-color: #000;
-            color: #fff;
-            border-color: #eee; 
-        }
-            </style>
+    <script src="scripts/modebutton.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/sticky.js"></script>
-    <div id="welcome">
-        <picture>
-            <source media="(min-width:650px)" srcset="images/tirana.jpg">
-            <source media="(min-width:465px)" srcset="images/tirana.jpg">
-            <img src="images/tirana.jpg" alt="Tirana" style="width:auto;">
-        </picture>
-        <p>Welcome to the Albania Chamber of Commerce!</p>
-    </div>
     <main>
-        <div id="cards">
-            <section class="card">
-                <h3>Join the Chamber of Commerce</h3>
-                <p>Join our community of businesses and start networking today.</p>
-                <a href="join.html" class="join-link">Join Now</a>
-            </section>
-            <section class="card">
-                <h3>Current Events</h3>
-                <div id="event">Event 1: Date, Time, Location</div>
-                <div id="event">Event 2: Date, Time, Location</div>
-            </section>
-            <section class="card">
-                <h3>Company Spotlights</h3>
-                <ul>
-                    <li>Company 1: Description of the company and its products or services.</li>
-                    <li>Company 2: Description of the company and its products or services.</li>
-                    <li>Company 3: Description of the company and its products or services.</li>
-                </ul>
-            </section>
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
         </div>
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()" class="cancelbtn">Cancel</button>
+            <script>
+                function changeNavBarPosition1() {
+                    var navbar = document.getElementById("main-nav");
+                    if (navbar.style.position === "static") {
+                        navbar.style.position = "fixed";
+                    } else {
+                        navbar.style.position = "fixed";
+                    }
+                }
+            </script>
     </main>
-        <div class="albania-pictures">
-            <div class="picture" style="background-image: url('images/berat.jpg')"></div>
-            <div class="picture" style="background-image: url('images/gjirokaster.jpg')"></div>
-            <div class="picture" style="background-image: url('images/shkoder.jpg')"></div>
-        </div>
-
-        <div id="population-card">
-            <p>Current Population: 2.8 million</p>
-            <p>Elevation:  2,343 ft<br>(714 m)</p>
-            <p>Land Mass: 11,100 sq mi<br>(28,748 km2)</p>
-            <p>Water Mass: 520 sq mi<br>(1,350 km2)</p>
-        </div>
-        <section class="card" id="weather-card">
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077813.4715538276!2d17.385760932684985!3d41.1197400152456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453bf3bd274c2d%3A0x77ce589d6983bee!2sAlbania!5e0!3m2!1sen!2sus!4v1706859853044!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
-            </div>
-            <div class="weather">
-                <p>Current temperature: <span id="temperature">47</span>°F</p>
-                <p>Conditions: Sunny</p>
-                <p>Humidity: 10%</p>
-                <p>Windspeed: <span id="windSpeed">6</span>mph</p>
-                <p>Wind Chill: <span id="windChill"></span></p>
-                <script src="scripts/windchill.js"></script>
-            </div>
-        </section>
     <footer>
         <div id="footer_contact">
             <p>Tirana Albania Chamber of Commerce</p>
