@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://shanebasham.github.io/wdd230/images/me.jpg">
     <meta property="og:url" content="https://shanebasham.github.io/wdd230/index.html">
-    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/join.css" rel="stylesheet" >
     <link href="styles/medium.css" rel="stylesheet" >
     <link href="styles/larger.css" rel="stylesheet" >
     <link rel="icon" href="images/favicon.ico">
@@ -89,28 +89,37 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/sticky.js"></script>
     <main>
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-        <div class="container">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()" class="cancelbtn">Cancel</button>
-            <script>
-                function changeNavBarPosition1() {
-                    var navbar = document.getElementById("main-nav");
-                    if (navbar.style.position === "static") {
-                        navbar.style.position = "fixed";
-                    } else {
-                        navbar.style.position = "fixed";
-                    }
-                }
-            </script>
+        <form method="get" action="thankyou.html">
+            <label for="firstname" class="req">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname" class="req">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="position" class="req">Title or Position</label>
+            <input type="text" id="position" name="position" required>
+            <label for="email" class="req">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone" class="req">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="organizationname" class="req">Business or Organization Name</label>
+            <input type="text" id="organizationname" name="organizationname" required>
+            <label for="membership" class="req">Select a membership</label>
+            <div id="radio">
+                <input type="radio" id="npmembership" name="membership" value="NP Membership">
+                <label for="npmembership">NP Membership(for non profit organizations and there is no fee)</label>
+                <input type="radio" id="bronzemembership" name="membership" value="bronzemembership">
+                <label for="bronzemembership">Bronze Membership</label>
+                <input type="radio" id="silvermembership" name="membership" value="silvermembership">
+                <label for="silvermembership">Silver Membership</label>
+                <input type="radio" id="goldmembership" name="membership" value="goldmembership">
+                <label for="goldmembership">Gold Membership</label>
+            </div>
+            <label for="description" class="req">Business or Organization Description</label>
+		    <textarea id="description" name="description" required></textarea>
+
+            <button id="btnSubmit" type="submit">Submit</button>
+            <input type="hidden" value="43aster">
+            <script src="scripts/form.js"></script>
+        </form>
     </main>
     <footer>
         <div id="footer_contact">

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shane Basham - Albania Chamber of Commerce</title>
+    <title>Shane Basham - Form Assignment</title>
     <meta name="author" content="Shane Basham">
     <meta
         name="description"
-        content="Shane Basham's Chamber of Commercefor WDD 230 - Web Frontend Development">
+        content="Shane Basham's Form Assignment for WDD 230 - Web Frontend Development">
     <link rel="stylesheet" href="styles/normalize.css">
     <meta property="og:title" content="Albania Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -48,9 +48,9 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone">
             <label for="keyphrase" class="req">Your Password</label>
-            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z0-9]{8,}" placeholder="At least six characters long. No numbers.">
             <label for="keyphrase2" class="req">Re-enter Your Password</label>
-            <input type="text" id="keyphrase2" name="keyphrase2">
+            <input type="text" id="keyphrase2" name="keyphrase2" pattern="[a-zA-Z0-9]{8,}">
             <label for="r">Page Rating</label>
             <div id="rangevalue">0</div>
             <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
