@@ -7,7 +7,7 @@ html {
     max-width: 1600px;
     margin: 0 auto;
 }
-img {
+#headerimg {
     display: flex;
     border-radius: 50%;
     width: 80px;

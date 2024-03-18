@@ -9,15 +9,15 @@ async function getProphetData(url) {
     displayProphets(data.prophets);
 }
   
-getProphetData();
+getProphetData(url);
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         const card = document.createElement("section");
-        const fullName = document.createElement("h2");
+        const fullName = document.createElement("h3");
         const portrait = document.createElement("img");
 
-        fullName.textContent = `${prophet.name.first} ${prophet.name.last}`;
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name.first} ${prophet.name.last}`);
         portrait.setAttribute('loading', 'lazy');
