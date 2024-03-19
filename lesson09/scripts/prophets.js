@@ -15,9 +15,13 @@ const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         const card = document.createElement("section");
         const fullName = document.createElement("h3");
+        const dob = document.createElement("h5");
+        const pob = document.createElement("h5");
         const portrait = document.createElement("img");
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        dob.textContent = `Date of Birth: ${prophet.birthdate}`;
+        pob.textContent = `Place of Birth: ${prophet.birthplace}`;
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name.first} ${prophet.name.last}`);
         portrait.setAttribute('loading', 'lazy');
@@ -25,6 +29,8 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
 
         card.appendChild(fullName);
+        card.appendChild(dob);
+        card.appendChild(pob);
         card.appendChild(portrait);
 
         cards.appendChild(card);
