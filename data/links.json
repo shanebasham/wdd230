@@ -4,12 +4,16 @@
         "lesson": "02",
         "links": [
             {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
+            "url":"https://shanebasham.github.io/wdd230/lesson02/design.html",
+            "title":"Web Design Activity"
             },
             {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"https://shanebasham.github.io/wdd230/lesson02/design-principles.html",
+            "title":"Design-principles Activity"
+            },
+            {
+            "url":"https://codepen.io/shanebasham/pen/YzgxmYW",
+            "title":"CSS Pseudo-elements Codepen"
             }
         ]
         },
@@ -17,12 +21,8 @@
         "lesson": "03",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
-            },
-            {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":"https://shanebasham.github.io/wdd230/lesson03/chamber-site-plan.html",
+                "title":"Chamber Site Plan"
             }
             ]
         },
@@ -30,12 +30,8 @@
         "lesson": "04",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
-            },
-            {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":"https://codepen.io/shanebasham/pen/JjzpZMg",
+                "title":"CSS Pseudo-classes Codepen"
             }
             ]
         },
@@ -43,12 +39,8 @@
         "lesson": "05",
         "links": [
             {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-            },
-            {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"https://shanebasham.github.io/wdd230/lesson05/bom.html",
+            "title":"DOM Manipulation Activity"
             }
         ]
         },
@@ -56,12 +48,12 @@
         "lesson": "06",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
+                "url":"https://shanebasham.github.io/wdd230/lesson06/images/landscape.webp",
+                "title":"WebP"
             },
             {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":"https://shanebasham.github.io/wdd230/lesson06/responsive-images.html",
+                "title":"Responsive Images Activity"
             }
             ]
         },
@@ -69,12 +61,8 @@
         "lesson": "07",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
-            },
-            {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":" ",
+                "title":"7"
             }
             ]
         },
@@ -82,12 +70,8 @@
         "lesson": "08",
         "links": [
             {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-            },
-            {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"https://shanebasham.github.io/wdd230/form.html",
+            "title":"Forms Activity"
             }
         ]
         },
@@ -95,12 +79,12 @@
         "lesson": "09",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
+                "url":"https://shanebasham.github.io/wdd230/lesson09/new-ward-members.json",
+                "title":"JSON Activity"
             },
             {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":"https://shanebasham.github.io/wdd230/lesson09/prophets.html",
+                "title":"Prophets Activity"
             }
             ]
         },
@@ -108,12 +92,12 @@
         "lesson": "010",
         "links": [
             {
-                "url":"lesson02/mediaquery.html",
-                "title":"Media Queries"
+                "url":" ",
+                "title":"10"
             },
             {
-                "url":"lesson02/design-principles.html",
-                "title":"Design Principles Document"
+                "url":" ",
+                "title":"10"
             }
             ]
         }

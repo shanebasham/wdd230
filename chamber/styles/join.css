@@ -197,12 +197,13 @@ html, body {
 }
 main {
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 75px;
     margin-bottom: 75px;
     border: 1px solid black;
-    padding: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 form {
@@ -227,6 +228,46 @@ ul a:hover{
     color: red;
     text-decoration: none;
 }
+
+/* -------------------------levels---------------------------- */
+#form1 h3 {
+    color: #bc5e00;
+}
+.membership-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .membership-form {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .membership-benefits-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  .membership-benefits-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #606060;
+    box-shadow: 20px #606060;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    .membership-container {
+      flex-direction: column;
+    }
+    .membership-benefits-container {
+      margin-top: 20px;
+    }
+  }
 
 /* -------------------------------- FORM -------------------------*/
 input,
@@ -270,6 +311,14 @@ input::placeholder {
     position: absolute;
     top: -10px;
     right: 10px;
+}
+.membership-form {
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#btnSubmit {
+    margin-top: 25px;
 }
 
 /* ---------------------------- footer ------------------------- */

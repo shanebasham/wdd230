@@ -127,7 +127,7 @@ nav {
     z-index: 10;
     flex-direction: row;
     justify-content: space-between;
-    background-color: gray;
+    background-color: #606060;
     opacity: 0.75;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -183,7 +183,7 @@ html, body {
 #welcome p {
     font-family: monospace;
     color: white;
-    background-color: gray;
+    background-color: #606060;
     opacity: 0.75;
     border-radius: 50%;
     font-size: 50px;
@@ -199,6 +199,99 @@ main {
     margin: 25px;
     text-align: center;
 }
+
+/* --------------------------------------directory------------------------------------ */
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    border-radius: 0%;
+}
+.grid section > * {
+	margin: 0.1rem;
+}
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%;
+}
+
+
+/* --------------------------------------directory------------------------------------ */
 h2 {
     text-align: center;
     color: black;
@@ -262,8 +355,8 @@ p {
     display: flex;
     margin: auto;
     height: 250px;
-    background-color: gray;
-    border: 8px solid gray;
+    background-color: #606060;
+    border: 8px solid #606060;
   }
 .picture {
     float: left;
@@ -278,7 +371,7 @@ p {
     row-gap: 10px;
 }
 .pictures {
-    border: solid 2px gray;
+    border: solid 2px #606060;
     background-size: cover;
     height: 150px;
     width: 350px;
@@ -289,7 +382,7 @@ div#population-card {
     grid-template-columns: 25% 25% 25% 25%;
     margin: auto;
     margin-bottom: 25px;
-    background-color: gray;
+    background-color: #606060;
 }
 #population-card p {
     color: white;
@@ -499,8 +592,8 @@ nav.show:hover {
     height: 50%;
     overflow: hidden;
     position: relative;
-    background-color: gray;
-    border: 8px solid gray;
+    background-color: #606060;
+    border: 8px solid #606060;
   }
 .albania-pictures > div {
     width: 100%;
