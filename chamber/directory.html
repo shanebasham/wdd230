@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Name - WDD 230 - Web Frontend Development Chamber of Commerce Assignment</title>
     <meta name="author" content="Shane Basham">
-    <meta
-        name="description"
-        content="Shane Basham's course assignment for WDD 230 - Albania Chamber of Commerce">
+    <meta name="description" content="Shane Basham's course assignment for WDD 230 - Albania Chamber of Commerce">
     <link rel="stylesheet" href="styles/normalize.css">
     <meta property="og:title" content="Albania Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://shanebasham.github.io/wdd230/images/me.jpg">
     <meta property="og:url" content="https://shanebasham.github.io/wdd230/index.html">
-    <link href="styles/base.css" rel="stylesheet" >
-    <link href="styles/medium.css" rel="stylesheet" >
-    <link href="styles/larger.css" rel="stylesheet" >
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
         <div id="mode">
@@ -26,7 +26,9 @@
         <img src="images/albania.png" alt="Albania">
         <h1>Albania Chamber of Commerce</h1>
         <div id="login-button">
-            <button class="login" onclick="document.getElementById('id01').style.display='block'; changeNavBarPosition()" style="width:auto;">Login</button>
+            <button class="login"
+                onclick="document.getElementById('id01').style.display='block'; changeNavBarPosition()"
+                style="width:auto;">Login</button>
             <script>
                 function changeNavBarPosition() {
                     var navbar = document.getElementById("main-nav");
@@ -38,37 +40,39 @@
                 }
             </script>
             <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                <img src="images/img_avatar.jpg" alt="Avatar" class="avatar">
-                </div>
-                <div class="container">
-                    <label><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                    <label><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="submit">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-                <div class="container">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()" class="cancelbtn">Cancel</button>
-                    <script>
-                        function changeNavBarPosition1() {
-                            var navbar = document.getElementById("main-nav");
-                            if (navbar.style.position === "static") {
-                                navbar.style.position = "fixed";
-                            } else {
-                                navbar.style.position = "fixed";
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <img src="images/img_avatar.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container">
+                        <button type="button"
+                            onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()"
+                            class="cancelbtn">Cancel</button>
+                        <script>
+                            function changeNavBarPosition1() {
+                                var navbar = document.getElementById("main-nav");
+                                if (navbar.style.position === "static") {
+                                    navbar.style.position = "fixed";
+                                } else {
+                                    navbar.style.position = "fixed";
+                                }
                             }
-                        }
-                    </script>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
+                        </script>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
             </div>
-            <script> src="scripts/modal.js"</script>
+            <script> src = "scripts/modal.js"</script>
         </div>
         <div class="hamburger-icon" id="icon">
             <div class="icon-1" id="a"></div>
@@ -81,56 +85,40 @@
         <ul class="nav-link">
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/index.html">Home</a></li>
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a>
+            </li>
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">JOIN</a></li>
         </ul>
     </nav>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/sticky.js"></script>
     <main>
-        <h2>DIRECTORY</h1>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <div id="cards" class="grid"></div>
-        <hr>
-        <article class="grid">
-            <section>
-                <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
-                <h3>Payson Utah</h3>
-                <p>2015</p>
-                <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
-            </section>
-
-            <section>
-                <img src="https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg" alt="Boise Idaho Temple" />
-                <h3>Boise Idaho</h3>
-                <p>1984</p>
-                <a href="https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng" target="_blank">Details
-                </a>
-            </section>
-
-            <section>
-                <img src="https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg" alt="Oakland California Temple" />
-                <h3>Oakland California</h3>
-                <p>1964</p>
-                <a href="https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng" target="_blank">Details </a>
-            </section>
-        <script src="scripts/directory.js"></script>
+        <h2>DIRECTORY</h2>
+            <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <div id="cards" class="grid"></div>
+            <hr>
+            <article class="grid">
+                <script src="scripts/directory.js"></script>
+            </article>
     </main>
     <footer>
         <div id="footer_contact">
             <p>Tirana Albania Chamber of Commerce</p>
             <p>Rruga Vangjush Furxhi 65, Tirana 1001, Albania</p>
-            <p href="https://maps.app.goo.gl/DSQ39rJN6VyKcikw7?g_st=ic">MAP LOCATION</p>
+            <p><a href="https://maps.app.goo.gl/DSQ39rJN6VyKcikw7?g_st=ic">MAP LOCATION</a></p>
         </div>
         <div class="vl"></div>
         <div id="footer-info">
-            <p>&copy; <script src="scripts/getdates.js"></script> Shane Basham: WDD230 Project</p>
-            <p id="lastModified">Last modified: <script src="scripts/getlastmodified.js"></script></p>
+            <p>&copy;
+                <script src="scripts/getdates.js"></script> Shane Basham: WDD230 Project
+            </p>
+            <p id="lastModified">Last modified:
+                <script src="scripts/getlastmodified.js"></script>
+            </p>
         </div>
     </footer>
 </body>
-</html>
 
+</html>

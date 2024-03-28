@@ -87,7 +87,6 @@
     </nav>
     <script src="scripts/modebutton.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/sticky.js"></script>
     <main>
         
         <div id="levels">
@@ -99,14 +98,14 @@
                         <label for="lastname" class="req">Last Name</label>
                         <input type="text" id="lastname" name="lastname" required>
                         <label for="position" class="req">Title or Position</label>
-                        <input type="text" id="position" name="position" required>
+                        <input type="text" id="position" name="position" required pattern="[a-zA-Z\- ]{7,}"/>
                         <label for="email" class="req">Email</label>
                         <input type="email" id="email" name="email" placeholder="ex. 123@gmail.com" required>
                         <label for="phone" class="req">Phone Number</label>
                         <input type="tel" id="phone" name="phone" required>
                         <label for="organizationname" class="req">Business or Organization Name</label>
                         <input type="text" id="organizationname" name="organizationname" required>
-                        <label for="membership" class="req">Select a Membership</label>
+                        <label class="req">Select a Membership</label>
                         <div id="radio">
                             <input type="radio" id="npmembership" name="membership" value="NP Membership">
                             <label for="npmembership">NP Membership(for non profit organizations and there is no fee)</label>
@@ -164,7 +163,7 @@
         <div id="footer_contact">
             <p>Tirana Albania Chamber of Commerce</p>
             <p>Rruga Vangjush Furxhi 65, Tirana 1001, Albania</p>
-            <p href="https://maps.app.goo.gl/DSQ39rJN6VyKcikw7?g_st=ic">MAP LOCATION</p>
+            <p><a href="https://maps.app.goo.gl/DSQ39rJN6VyKcikw7?g_st=ic">MAP LOCATION</a></p>
         </div>
         <div class="vl"></div>
         <div id="footer-info">

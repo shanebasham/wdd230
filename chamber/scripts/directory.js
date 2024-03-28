@@ -14,18 +14,31 @@ function showList() {
 	display.classList.remove("grid");
 }
 
+// -----------------------------------------------------------------------
+
+// img.setAttribute('loading', 'lazy');
+//         img.setAttribute('width', '340');
+//         img.setAttribute('height', '440');
+
+//         card.appendChild(name);
+//         card.appendChild(website);
+//         card.appendChild(address);
+//         card.appendChild(number);
+//         card.appendChild(img);
+
+//         cards.appendChild(card);
+//     });
+// };
 
 
 
-const json = fs.readFileSync("data/members.json", "utf8"); 
-const url = JSON.parse(json);
+const url = "data/members.json";
 const cards = document.querySelector('#cards');
 
 async function getCompaniesData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.companies);
-    displayProphets(data.companies);
+    displayCompanies(data.companies);
 }
   
 getCompaniesData(url);
@@ -40,9 +53,9 @@ const displayCompanies = (companies) => {
         const img = document.createElement("img");
 
         name.textContent = `${company.name}`;
-        address.textContent = `${company.address}`;
-        number.textContent = `${company.number}`;
-		website.textContent = `${company.number}`;
+        address.textContent = `${company.address.street}, ${company.address.city}`;
+        number.textContent = `${company.phone}`;
+		website.textContent = `${company.website}`;
         img.setAttribute('src', company.image);
         img.setAttribute('alt', `Image of ${company.name} Logo`);
         img.setAttribute('loading', 'lazy');

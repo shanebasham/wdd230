@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 
 @media only screen and (max-width: 1600px) {
 html {
@@ -127,20 +127,14 @@ nav {
     z-index: 10;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #606060;
+    background-color: #666666;
     opacity: 0.75;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
     z-index: 1000;
-    /* border-bottom-right-radius: 15%;
-    border-bottom-left-radius: 15%; */
 } 
-nav.sticky {
-    position: fixed;
-    top: 0;
-}
 .navbarOffsetMargin {
     padding-top: 45px;
   }
@@ -183,7 +177,7 @@ html, body {
 #welcome p {
     font-family: monospace;
     color: white;
-    background-color: #606060;
+    background-color: #666666;
     opacity: 0.75;
     border-radius: 50%;
     font-size: 50px;
@@ -355,8 +349,8 @@ p {
     display: flex;
     margin: auto;
     height: 250px;
-    background-color: #606060;
-    border: 8px solid #606060;
+    background-color: #666666;
+    border: 8px solid #666666;
   }
 .picture {
     float: left;
@@ -364,17 +358,22 @@ p {
     background-size: cover;
     margin: 15px;
 }
-#imgs {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    column-gap: 5px;
-    row-gap: 10px;
-}
-.pictures {
-    border: solid 2px #606060;
+.pictures img {
+    border: solid 2px #666666;
     background-size: cover;
     height: 150px;
     width: 350px;
+    border-radius: 0%;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.pictures img:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: ease-in;
 }
 
 div#population-card {
@@ -382,7 +381,7 @@ div#population-card {
     grid-template-columns: 25% 25% 25% 25%;
     margin: auto;
     margin-bottom: 25px;
-    background-color: #606060;
+    background-color: #666666;
 }
 #population-card p {
     color: white;
@@ -551,14 +550,13 @@ button.login {
     text-align: center;
     list-style: none;
     font-size: 20px;
-    color: #fff;
+    color: white;
     margin: auto;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 .nav-link:hover {
     cursor: default;
-    pointer-events: none
 }
 nav.show {
     padding: 4px;
@@ -585,6 +583,9 @@ nav.show:hover {
 .pictures {
     margin: 0 auto;
 }
+.pictures img:hover {
+    transform: scale(1);
+}
 
 /* ----------------------slide show----------------------------- */
 .albania-pictures {
@@ -592,8 +593,8 @@ nav.show:hover {
     height: 50%;
     overflow: hidden;
     position: relative;
-    background-color: #606060;
-    border: 8px solid #606060;
+    background-color: #666666;
+    border: 8px solid #666666;
   }
 .albania-pictures > div {
     width: 100%;
