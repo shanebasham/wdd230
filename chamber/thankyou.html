@@ -26,17 +26,7 @@
         <img src="images/albania.png" alt="Albania">
         <h1>Albania Chamber of Commerce</h1>
         <div id="login-button">
-            <button class="login" onclick="document.getElementById('id01').style.display='block'; changeNavBarPosition()" style="width:auto;">Login</button>
-            <script>
-                function changeNavBarPosition() {
-                    var navbar = document.getElementById("main-nav");
-                    if (navbar.style.position === "sticky") {
-                        navbar.style.position = "static";
-                    } else {
-                        navbar.style.position = "static";
-                    }
-                }
-            </script>
+            <button class="login" onclick="document.getElementById('id01'); changeNavBarPosition()">Login</button>
             <div id="id01" class="modal">
             <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
@@ -53,17 +43,7 @@
                     </label>
                 </div>
                 <div class="container">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()" class="cancelbtn">Cancel</button>
-                    <script>
-                        function changeNavBarPosition1() {
-                            var navbar = document.getElementById("main-nav");
-                            if (navbar.style.position === "static") {
-                                navbar.style.position = "fixed";
-                            } else {
-                                navbar.style.position = "fixed";
-                            }
-                        }
-                    </script>
+                    <button type="button" onclick="document.getElementById('id01'); changeNavBarPosition1()" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>

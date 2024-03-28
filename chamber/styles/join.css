@@ -127,23 +127,14 @@ nav {
     z-index: 10;
     flex-direction: row;
     justify-content: space-between;
-    background-color: gray;
+    background-color: #666666;
     opacity: 0.75;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
     z-index: 1000;
-    /* border-bottom-right-radius: 15%;
-    border-bottom-left-radius: 15%; */
 } 
-nav.sticky {
-    position: fixed;
-    top: 0;
-}
-.navbarOffsetMargin {
-    padding-top: 45px;
-  }
 .nav-link {
     display: flex;
     justify-content: space-between;
