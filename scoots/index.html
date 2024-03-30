@@ -17,37 +17,103 @@
 
 <body>
     <header>
-        <img src="images/albania.png" alt="Albania">
-        <h1>Scoots</h1>
+        <img src="images/img_avatar.jpg" alt="Albania">
+        <h1>SCOOTS RENTAL</h1>
         <div class="hamburger-icon" id="icon">
             <div class="icon-1" id="a"></div>
             <div class="icon-2" id="b"></div>
             <div class="icon-3" id="c"></div>
             <div class="clear"></div>
         </div>
+        <nav id="nav">
+            <ul class="nav-link">
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/index.html">Home</a></li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/rentals.html">Rentals</a></li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/reservations.html">Reservation</a></li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="nav">
-        <ul class="nav-link">
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/index.html">Home</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">Join</a></li>
-        </ul>
-    </nav>
     <script src="scripts/hamburger.js"></script>
 
     <div class="welcome">
         <picture>
             <source media="(min-width:650px)" srcset="images/tirana.jpg">
             <source media="(min-width:465px)" srcset="images/tirana.jpg">
-            <img src="images/tirana.jpg" alt="Tirana">
+            <img src="images/conzumelwelcome.jpg" alt="Cozumel">
         </picture>
         <p id="welcome">Welcome to Scoots Homepage!</p>
         <p id="join-link"><a href="join.html" class="join-link">Book Your Reservatioins NOW!</a></p>
     </div>
-
+    <div id="chamber-banner">
+        <button id="banner-close-button">❌</button>
+        <p>Join us for the Chamber of Commerce meet and greet this Wednesday at 7:00 pm!</p>
+    </div>
     <main>
-        <div id="cards" id="event">
+        <div class="message">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Today's high temperature: <span id="high-temp"></span>°C
+          </div>
+        
+          <header>
+            <h1>Welcome to Island Rental</h1>
+            <nav>
+              <ul>
+                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+        
+          <section id="rentals">
+            <h2>Our Rentals</h2>
+            <p>Summary information about all types of rentals goes here.</p>
+            <!-- Add images and details of rentals -->
+          </section>
+        
+          <section id="reservation">
+            <h2>Make a Reservation</h2>
+            <p>Click below to reserve your rental now!</p>
+            <a href="reservation.html" class="cta">Reserve Now</a>
+          </section>
+        
+          <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries and bookings, contact us at:</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@islandrental.com</p>
+          </section>
+        
+          <section id="weather">
+            <h2>Weather Information</h2>
+            <div id="weather-data">
+              <!-- Weather data will be displayed here -->
+            </div>
+          </section>
+        
+          <script>
+            // Fetch weather data from openweathermap.org
+            fetch('https://api.openweathermap.org/data/2.5/weather?q=island&appid=e3c029f95267a6d1e77de21834a8f433&units=metric')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('weather-data').innerHTML = `
+                  <p>Current Temperature: ${data.main.temp}°C</p>
+                  <p>Current Humidity: ${data.main.humidity}%</p>
+                  <p>Next Day's Forecasted Temperature at 3:00pm: ${data.main.temp}°C</p>
+                  <p>Weather: ${data.weather[0].main}</p>
+                  <p>Description: ${data.weather[0].description}</p>
+                  <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Icon">
+                `;
+              });
+        
+            // Display today's high temperature in the message
+            fetch('https://api.openweathermap.org/data/2.5/forecast?q=island&appid=e3c029f95267a6d1e77de21834a8f433&units=metric')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('high-temp').innerText = data.list[0].main.temp_max;
+              });
+          </script>
+        <!-- <div id="cards" id="event">
             <section class="card">
                 <h3>Join the Chamber of Commerce</h3>
                 <div><br></div>
@@ -82,7 +148,7 @@
                     <script src="scripts/spotlights.js"></script>
                 </div>
             </section>
-        </div>
+        </div> -->
     </main>
 
     <footer>
