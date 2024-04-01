@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Name - WDD 230 - Web Frontend Development Chamber of Commerce Assignment</title>
+    <title>Shane Basham - WDD 230 - Web Frontend Development Chamber of Commerce Assignment</title>
     <meta name="author" content="Shane Basham">
     <meta name="description" content="Shane Basham's course assignment for WDD 230 - Albania Chamber of Commerce">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -27,8 +27,7 @@
         <h1>Albania Chamber of Commerce</h1>
         <div id="login-button">
             <button class="login"
-                onclick="document.getElementById('id01').style.display='block'; changeNavBarPosition()"
-                style="width:auto;">Login</button>
+                onclick="document.getElementById('id01'); changeNavBarPosition()">Login</button>
             <div id="id01" class="modal">
                 <form class="modal-content animate" action="/action_page.php" method="post">
                     <div class="imgcontainer">
@@ -46,18 +45,8 @@
                     </div>
                     <div class="container">
                         <button type="button"
-                            onclick="document.getElementById('id01').style.display='none'; changeNavBarPosition1()"
+                            onclick="document.getElementById('id01'); changeNavBarPosition1()"
                             class="cancelbtn">Cancel</button>
-                        <script>
-                            function changeNavBarPosition1() {
-                                var navbar = document.getElementById("main-nav");
-                                if (navbar.style.position === "static") {
-                                    navbar.style.position = "fixed";
-                                } else {
-                                    navbar.style.position = "fixed";
-                                }
-                            }
-                        </script>
                         <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                 </form>
@@ -75,9 +64,8 @@
         <ul class="nav-link">
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/index.html">Home</a></li>
             <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a>
-            </li>
-            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">JOIN</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">Join</a></li>
         </ul>
     </nav>
     <script>
@@ -91,27 +79,49 @@
         });
     </script>
     <script src="scripts/hamburger.js"></script>
-    <div id="welcome">
+    <div class="welcome">
         <picture>
             <source media="(min-width:650px)" srcset="images/tirana.jpg">
             <source media="(min-width:465px)" srcset="images/tirana.jpg">
-            <img src="images/tirana.jpg" alt="Tirana" style="width:auto;">
+            <img src="images/tirana.jpg" alt="Tirana">
         </picture>
-        <p>Welcome to the Albania Chamber of Commerce!</p>
+        <p id="welcome">Welcome to the Albania Chamber of Commerce!</p>
+        <p id="join-link"><a href="join.html" class="join-link">JOIN NOW!</a></p>
     </div>
+    <div id="chamber-banner">
+        <button id="banner-close-button">❌</button>
+        <p>Join us for the Chamber of Commerce meet and greet this Wednesday at 7:00 pm!</p>
+    </div>
+    <script src="scripts/banner.js"></script>
     <main>
         <div id="cards" id="event">
             <section class="card">
                 <h3>Join the Chamber of Commerce</h3>
                 <div><br></div>
                 <div>Join our community of businesses and start networking today.</div>
-                <a href="join.html" class="join-link">Join Now</a>
+                <a href="join.html" class="join">Click Here To Join!</a>
             </section>
             <section class="card">
                 <h3>Current Events</h3>
                 <div><br></div>
-                <div>Event 1: Date, Time, Location</div>
-                <div>Event 2: Date, Time, Location</div>
+                <div class="event-card">
+                    <h3>🎭 Theatrical evening at the Theater!</h3>
+                    <p>Date: 5/17/2024</p>
+                    <p>Time: 7:30</p>
+                    <p>Location: Historik Theater, Tirana</p>
+                  </div>
+                  <div class="event-card">
+                    <h3>🍽️ Cooking class at a Cozy Restaurant!</h3>
+                    <p>Date: 12/15/2023</p>
+                    <p>Time: 3:00 PM </p>
+                    <p>Location: Restaurant Mira, Durres</p>
+                  </div>
+                  <div class="event-card">
+                    <h3>📚 Book club gathering at the Library!</h3>
+                    <p>Date: 8/29/2023</p>
+                    <p>Time: 6:00 PM</p>
+                    <p>Location: Library e Madhe, Shkoder</p>
+                  </div>
             </section>
             <section class="card" id="spotlights">
                 <h3>Company Spotlights</h3>
@@ -122,9 +132,9 @@
         </div>
     </main>
     <div class="albania-pictures">
-        <div class="picture" style="background-image: url('images/berat.jpg')"></div>
+        <!-- <div class="picture" style="background-image: url('images/berat.jpg')"></div>
         <div class="picture" style="background-image: url('images/gjirokaster.jpg')"></div>
-        <div class="picture" style="background-image: url('images/shkoder.jpg')"></div>
+        <div class="picture" style="background-image: url('images/shkoder.jpg')"></div> -->
     </div>
 
     <div id="population-card">
@@ -137,7 +147,7 @@
         <div class="google-map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077813.4715538276!2d17.385760932684985!3d41.1197400152456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453bf3bd274c2d%3A0x77ce589d6983bee!2sAlbania!5e0!3m2!1sen!2sus!4v1706859853044!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="600" height="450" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>">
         </div>
@@ -148,6 +158,15 @@
             <p>Windspeed: <span id="windSpeed">6</span>mph</p>
             <p>Wind Chill: <span id="windChill"></span></p>
             <script src="scripts/windchill.js"></script>
+        </div>
+        <div>
+            <h1>OpenWeatherMap.org API Test</h1>
+            <main>
+            <p>The current temperature in Tirana Albania is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
         </div>
     </section>
     <footer>

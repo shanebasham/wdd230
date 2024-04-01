@@ -127,23 +127,14 @@ nav {
     z-index: 10;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #606060;
+    background-color: #666666;
     opacity: 0.75;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
     z-index: 1000;
-    /* border-bottom-right-radius: 15%;
-    border-bottom-left-radius: 15%; */
 } 
-nav.sticky {
-    position: fixed;
-    top: 0;
-}
-.navbarOffsetMargin {
-    padding-top: 45px;
-  }
 .nav-link {
     display: flex;
     justify-content: space-between;
@@ -183,7 +174,7 @@ html, body {
 #welcome p {
     font-family: monospace;
     color: white;
-    background-color: #606060;
+    background-color: gray;
     opacity: 0.75;
     border-radius: 50%;
     font-size: 50px;
@@ -196,37 +187,16 @@ html, body {
     margin-top: 20px;
 }
 main {
-    margin: 25px;
     text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border: 1px solid black;
+    padding-left: 50px;
+    padding-top: 50px;
 }
-h2 {
-    text-align: center;
-    color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 20px;
-    margin: 0;
-    padding-bottom: 15px;
-}
-h3 {
-    display: block;
-    color: black;
-    background-color: red;
-    border-bottom: 4px solid black;
-    font-family: "Lucida Console", "Courier New", monospace;
-    text-align: center;
-    padding: 25px;
-    margin: 0px;
-}
-#cards {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    column-gap: 5px;
-    margin-top: 150px;
-    margin-bottom: 25px;
-}
-.card  {
-    border: 4px solid black;
-}
+
 form {
     margin: 0 auto;
     align-self: center;
@@ -249,78 +219,98 @@ ul a:hover{
     color: red;
     text-decoration: none;
 }
-p {
-    margin: 0 auto;
-    align-self: center;
-    text-align: center;
-    list-style: none;
-    margin: 25px;
-    padding-inline-start: 0px;
-    padding: 0px;
+
+/* -------------------------levels---------------------------- */
+#form1 h3 {
+    color: #bc5e00;
 }
-.albania-pictures {
+.membership-container {
     display: flex;
-    margin: auto;
-    height: 250px;
-    background-color: #606060;
-    border: 8px solid #606060;
+    flex-direction: row;
   }
-.picture {
-    float: left;
-    width: 33%;
-    background-size: cover;
-    margin: 15px;
-}
-#imgs {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    column-gap: 5px;
-    row-gap: 10px;
-}
-.pictures {
-    border: solid 2px #606060;
-    background-size: cover;
-    height: 150px;
-    width: 350px;
-}
+  .membership-form {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .membership-benefits-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  .membership-benefits-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #606060;
+    box-shadow: 20px #606060;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    .membership-container {
+      flex-direction: column;
+    }
+    .membership-benefits-container {
+      margin-top: 20px;
+    }
+  }
 
-div#population-card {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin: auto;
-    margin-bottom: 25px;
-    background-color: #606060;
+/* -------------------------------- FORM -------------------------*/
+input,
+textarea,
+select {
+    display: flex;
+    border: 1px solid black;
+    width: 99%;
+    height: 20px;
 }
-#population-card p {
-    color: white;
+label {
+    color: black;
+    font-size: 16px;
+    text-align: left;
 }
-
-#weather-card {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 25px;
+#radio {
+    display: block; 
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
 }
-.google-map {
-    border: 4px solid black;
-    padding-bottom: 50%;
-    position: relative;
-    margin: 25px;
-
+input::placeholder {
+    font-size: 13px;
 }
-.google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
+#formmessage {
+    visibility: none;
+    color: red;
+}
+#keyphrase:invalid {
+    background-color: #fff0f3;
+    animation: shaketext 500ms;
+}
+.req::after {
+    font-size: 10px;
+    content: " *️⃣";
+}
+.smaller {
+    font-size: 11px;
     position: absolute;
+    top: -10px;
+    right: 10px;
 }
-.weather {
-    display: block;
-    margin: auto;
+.membership-form {
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
+#btnSubmit {
+    margin-top: 25px;
+}
 
 /* ---------------------------- footer ------------------------- */
 footer {
@@ -499,10 +489,36 @@ nav.show:hover {
     height: 50%;
     overflow: hidden;
     position: relative;
-    background-color: #606060;
-    border: 8px solid #606060;
+    background-color: gray;
+    border: 8px solid gray;
+  }
+.albania-pictures > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    animation: slide 30s infinite;
+    opacity: 0;
+  }
+.albania-pictures > div:nth-child(2) {
+animation-delay: 10s;
+}
+.albania-pictures > div:nth-child(3) {
+animation-delay: 20s;
+}
+@keyframes slide {
+    10% {
+      opacity: 1;
+    }
+    70% {
+      transform: scale(1.2);
+    }
   }
 
+#weather-card {
+    width: 75%;
+    margin: auto;
+}
 /* -----------------------footer------------------------- */
 footer {
     display: block;

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane Basham - WDD 230 - Web Frontend Development Final Project</title>
+    <meta name="author" content="Shane Basham">
+    <meta name="description" content="Shane Basham's Final Project for WDD 230 - Albania Chamber of Commerce">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://shanebasham.github.io/wdd230/images/me.jpg">
+    <meta property="og:url" content="https://shanebasham.github.io/wdd230/index.html">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/img_avatar.jpg" alt="Albania">
+        <h1>SCOOTS RENTAL</h1>
+        <div class="hamburger-icon" id="icon">
+            <div class="icon-1" id="a"></div>
+            <div class="icon-2" id="b"></div>
+            <div class="icon-3" id="c"></div>
+            <div class="clear"></div>
+        </div>
+        <nav id="nav">
+            <ul class="nav-link">
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/index.html">Home</a></li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/rentals.html">Rentals</a></li>
+                <li><a class="nav-link"
+                        href="https://shanebasham.github.io/wdd230/scoots/reservations.html">Reservation</a>
+                </li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="scripts/hamburger.js"></script>
+
+    <main>
+        <h2>Book Your Reservation!</h2>
+        <hr>
+        <h3>RENTAL AGREEMENT</h3>
+        <h4>A $50 security deposit is required to confirm reservations.<br>
+            A valid drivers license is required in hand at the time of rental.<br>
+            No one under the age of 12 years of age are allowed to ride on the scooters.<br>
+            Fuel charge is not included.<br>
+            Unlimited mileage.<br>
+            Liability insurance is included.<br>
+            Damage insurance is available for purchase.<br>
+            Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.<br>
+            Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.<br>
+            Rentals may be returned to either physical location.<br>
+        </h4>
+        <div id="levels">
+            <div class="membership-container">
+                <div class="membership-form">
+                    <form method="get" action="thankyou.html">
+                        <label for="firstname" class="req">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                        <label for="lastname" class="req">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                        <label for="start" class="req">Start Date:</label>
+                        <input type="date" id="date" name="start" required>
+                        <label for="end" class="req">End Date:</label>
+                        <input type="date" id="date" name="end" required>
+                        <label for="home" class="req">Home State or Country</label>
+                        <input type="text" id="home" name="home" required pattern="[a-zA-Z\- ]{50,}" />
+                        <label for="email" class="req">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ex. 123@gmail.com" required>
+                        <label for="phone" class="req">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="cruiseline">Cruise Line(if applicable)</label>
+                        <input type="text" id="cruiseline" name="cruiseline">
+                        <label class="req">Select a Rental Type</label>
+                        <div id="radio">
+                            <input type="radio" id="rental1" name="rental" value="rental1">
+                            <label for="rental1">Honda Metro Scooter</label>
+                            <input type="radio" id="rental2" name="rental" value="rental2">
+                            <label for="rental2">Honda Dio Scooter</label>
+                            <input type="radio" id="rental3" name="rental" value="rental3">
+                            <label for="rental3">Honda PCX150 Scooter</label>
+                            <input type="radio" id="rental4" name="rental" value="rental4">
+                            <label for="rental4">Honda Pioneer ATV</label>
+                            <input type="radio" id="rental5" name="rental" value="rental5">
+                            <label for="rental5">Jeep Wrangler - 4 door with a/c</label>
+                            <input type="radio" id="rental6" name="rental" value="rental6">
+                            <label for="rental6">Jeep Wrangler - 2 door</label>
+                        </div>
+                        <label for="description">Any Special Accommodations or Comments</label>
+                        <textarea id="description" name="description" placeholder="ex. need and location of a drop-off request"></textarea>
+
+                        <button id="btnSubmit" type="submit">Submit</button>
+                        <input type="hidden" value="43aster">
+                        <script src="scripts/form.js"></script>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+    <footer>
+        <div id="footer_contact">
+            <p>Scoots Rental Cozumel Mexico</p>
+            <p><a href="https://facebook.com/">Facebook</a></p>
+        </div>
+        <div class="vl"></div>
+        <div id="footer-info">
+            <p>&copy;
+                <script src="scripts/getdates.js"></script> Shane Basham: WDD230 Project
+            </p>
+            <p id="lastModified">Last modified:
+                <script src="scripts/getlastmodified.js"></script>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

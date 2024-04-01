@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane Basham - WDD 230 - Web Frontend Development Final Project</title>
+    <meta name="author" content="Shane Basham">
+    <meta name="description" content="Shane Basham's Final Project for WDD 230 - Albania Chamber of Commerce">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://shanebasham.github.io/wdd230/images/me.jpg">
+    <meta property="og:url" content="https://shanebasham.github.io/wdd230/index.html">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/img_avatar.jpg" alt="Albania">
+        <h1>SCOOTS RENTAL</h1>
+        <div class="hamburger-icon" id="icon">
+            <div class="icon-1" id="a"></div>
+            <div class="icon-2" id="b"></div>
+            <div class="icon-3" id="c"></div>
+            <div class="clear"></div>
+        </div>
+        <nav id="nav">
+            <ul class="nav-link">
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/index.html">Home</a></li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/rentals.html">Rentals</a></li>
+                <li><a class="nav-link"
+                        href="https://shanebasham.github.io/wdd230/scoots/reservations.html">Reservation</a>
+                </li>
+                <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="scripts/hamburger.js"></script>
+
+    <main>
+        <h2>Contact Us</h2>
+        <hr>
+            <h3>For all inquiries, contact us here!</h3>
+            <h4>Phone | 123-456-7890</h4>
+            <h4>Email | info@islandrental.com</h4>
+        <hr>       
+        <div class="membership-container">
+            <div class="membership-form">
+                <form method="get" action="thankyou.html">
+                    <label for="firstname" class="req">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <label for="lastname" class="req">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <label for="email" class="req">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ex. 123@gmail.com" required>
+                    
+                    <label for="message" class="req">Message</label>
+                    <textarea id="message" name="message" placeholder="enter message here" required></textarea>
+
+                    <button id="btnSubmit" type="submit">Submit</button>
+                    <input type="hidden" value="43aster">
+                    <script src="scripts/form.js"></script>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="google-map">
+            <h2>El Centro de Cozumel</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119544.16316368883!2d-87.03768549988773!3d20.557198846196965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e598d5524e661%3A0xff16922d3d563e0e!2sSan%20Miguel%20de%20Cozumel%20-%20Playa%20del%20Carmen%2C%20Mexico!5e0!3m2!1sen!2sus!4v1711861504140!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Terminal Puerta Maya</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7234078129195!2d-86.9760086247584!3d20.476550481038117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1711861576871!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+    </main>
+
+    <footer>
+        <div id="footer_contact">
+            <p>Scoots Rental Cozumel Mexico</p>
+            <p><a href="https://facebook.com/">Facebook</a></p>
+        </div>
+        <div class="vl"></div>
+        <div id="footer-info">
+            <p>&copy;
+                <script src="scripts/getdates.js"></script> Shane Basham: WDD230 Project
+            </p>
+            <p id="lastModified">Last modified:
+                <script src="scripts/getlastmodified.js"></script>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
