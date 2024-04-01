@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "pricing": [
         {
             "name": "Honda Metro Scooter",
@@ -72,105 +71,6 @@
                 "full": "90"
             },
             "max": "4"
-=======
-    "companies": [
-        {
-            "name": "Company 1",
-            "address": {
-                "street": "123 Main St",
-                "city": "Anytown",
-                "state": "CA",
-                "zip": "12345"
-            },
-            "phone": "555-555-1212",
-            "website": "www.companya.com",
-            "image": "images/albania.png",
-            "membershipLevel": "gold"
-        },
-
-        {
-            "name": "Company 2",
-            "address": {
-                "street": "456 Elm St",
-                "city": "Othertown",
-                "state": "NY",
-                "zip": "67890"
-            },
-            "phone": "555-555-3434",
-            "website": "www.companyb.com",
-            "image": "images/albania.png",
-            "membershipLevel": "silver"
-        },
-
-        {
-            "name": "Company 3",
-            "address": {
-                "street": "789 Oak St",
-                "city": "Thirdtown",
-                "state": "FL",
-                "zip": "23456"
-            },
-            "phone": "555-555-5656",
-            "website": "www.companyc.com",
-            "image": "images/albania.png",
-            "membershipLevel": "bronze"
-        },
-
-        {
-            "name": "Company 4",
-            "address": {
-                "street": "321 Pine St",
-                "city": "Fourthtown",
-                "state": "WA",
-                "zip": "78901"
-            },
-            "phone": "555-555-7878",
-            "website": "www.companyd.com",
-            "image": "images/albania.png",
-            "membershipLevel": "gold"
-        },
-        
-        {
-            "name": "Company 5",
-            "address": {
-                "street": "654 Maple St",
-                "city": "Fifthtown",
-                "state": "TX",
-                "zip": "34567"
-            },
-            "phone": "555-555-9090",
-            "website": "www.companye.com",
-            "image": "images/albania.png",
-            "membershipLevel": "silver"
-        },
-
-        {
-            "name": "Company 6",
-            "address": {
-                "street": "987 Birch St",
-                "city": "Sixthtown",
-                "state": "OH",
-                "zip": "45678"
-            },
-            "phone": "555-555-1111",
-            "website": "www.companyf.com",
-            "image": "images/albania.png",
-            "membershipLevel": "bronze"
-        },
-
-        {
-            "name": "Company 7",
-            "address": {
-                "street": "234 Cedar St",
-                "city": "Seventhtown",
-                "state": "PA",
-                "zip": "56789"
-            },
-            "phone": "555-555-2222",
-            "website": "www.companyg.com",
-            "image": "images/albania.png",
-            "membershipLevel": "gold"
->>>>>>> 3602172e894db010dbd557f10b898f854c44d006
         }
     ]
 }
