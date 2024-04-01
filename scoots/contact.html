@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -20,12 +21,65 @@
     <header>
         <img src="images/img_avatar.jpg" alt="Albania">
         <h1>SCOOTS RENTAL</h1>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Name - WDD 230 - Web Frontend Development Chamber of Commerce Assignment</title>
+    <meta name="author" content="Shane Basham">
+    <meta
+        name="description"
+        content="Shane Basham's course assignment for WDD 230 - Albania Chamber of Commerce">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Albania Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://shanebasham.github.io/wdd230/images/me.jpg">
+    <meta property="og:url" content="https://shanebasham.github.io/wdd230/index.html">
+    <link href="styles/join.css" rel="stylesheet" >
+    <link href="styles/medium.css" rel="stylesheet" >
+    <link href="styles/larger.css" rel="stylesheet" >
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="mode">
+            🕶️
+        </div>
+        <img src="images/albania.png" alt="Albania">
+        <h1>Albania Chamber of Commerce</h1>
+        <div id="login-button">
+            <button class="login" onclick="document.getElementById('id01'); changeNavBarPosition()">Login</button>
+            <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                <img src="images/img_avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('id01'); changeNavBarPosition1()" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+            </div>
+            <script> src="scripts/modal.js"</script>
+        </div>
+>>>>>>> 3602172e894db010dbd557f10b898f854c44d006
         <div class="hamburger-icon" id="icon">
             <div class="icon-1" id="a"></div>
             <div class="icon-2" id="b"></div>
             <div class="icon-3" id="c"></div>
             <div class="clear"></div>
         </div>
+<<<<<<< HEAD
         <nav id="nav">
             <ul class="nav-link">
                 <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/scoots/index.html">Home</a></li>
@@ -92,4 +146,102 @@
     </footer>
 </body>
 
+=======
+    </header>
+    <nav id="nav">
+        <ul class="nav-link">
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/directory.html">Directory</a></li>
+            <li><a class="nav-link" href="https://shanebasham.github.io/wdd230/chamber/join.html">JOIN</a></li>
+        </ul>
+    </nav>
+    <script src="scripts/modebutton.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <main>
+        
+        <div id="levels">
+            <div class="membership-container">
+                <div class="membership-form">
+                    <form method="get" action="thankyou.html">
+                        <label for="firstname" class="req">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                        <label for="lastname" class="req">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                        <label for="position" class="req">Title or Position</label>
+                        <input type="text" id="position" name="position" required pattern="[a-zA-Z\- ]{7,}"/>
+                        <label for="email" class="req">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ex. 123@gmail.com" required>
+                        <label for="phone" class="req">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="organizationname" class="req">Business or Organization Name</label>
+                        <input type="text" id="organizationname" name="organizationname" required>
+                        <label class="req">Select a Membership</label>
+                        <div id="radio">
+                            <input type="radio" id="npmembership" name="membership" value="NP Membership">
+                            <label for="npmembership">NP Membership(for non profit organizations and there is no fee)</label>
+                            <input type="radio" id="bronzemembership" name="membership" value="bronzemembership">
+                            <label for="bronzemembership">Bronze Membership</label>
+                            <input type="radio" id="silvermembership" name="membership" value="silvermembership">
+                            <label for="silvermembership">Silver Membership</label>
+                            <input type="radio" id="goldmembership" name="membership" value="goldmembership">
+                            <label for="goldmembership">Gold Membership</label>
+                        </div>
+                        <label for="description" class="req">Business or Organization Description</label>
+                        <textarea id="description" name="description" required></textarea>
+            
+                        <button id="btnSubmit" type="submit">Submit</button>
+                        <input type="hidden" value="43aster">
+                        <script src="scripts/form.js"></script>
+                    </form>
+                </div>
+                <div class="membership-benefits-container">
+                  <div class="membership-benefits-card" id="card1">
+                    <h3>Bronze</h3>
+                    <ul>
+                      <li>Special events</li>
+                      <li>Limited training</li>
+                      <li>Occasional homepage advertising</li>
+                      <li>Discounted event tickets</li>
+                    </ul>
+                    $500/year
+                  </div>
+                  <div class="membership-benefits-card" id="card2">
+                    <h3>Silver</h3>
+                    <ul>
+                      <li>Special events</li>
+                      <li>Monthly training sessions</li>
+                      <li>Regular homepage advertising</li>
+                      <li>Free event tickets</li>
+                    </ul>
+                    $1000/year
+                  </div>
+                  <div class="membership-benefits-card" id="card3">
+                    <h3>Gold</h3>
+                    <ul>
+                      <li>Exclusive events</li>
+                      <li>Weekly training sessions</li>
+                      <li>Prominent homepage advertising</li>
+                      <li>Free event tickets & VIP access</li>
+                    </ul>
+                    $2500/year
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_contact">
+            <p>Tirana Albania Chamber of Commerce</p>
+            <p>Rruga Vangjush Furxhi 65, Tirana 1001, Albania</p>
+            <p><a href="https://maps.app.goo.gl/DSQ39rJN6VyKcikw7?g_st=ic">MAP LOCATION</a></p>
+        </div>
+        <div class="vl"></div>
+        <div id="footer-info">
+            <p>&copy; <script src="scripts/getdates.js"></script> Shane Basham: WDD230 Project</p>
+            <p id="lastModified">Last modified: <script src="scripts/getlastmodified.js"></script></p>
+        </div>
+    </footer>
+</body>
+>>>>>>> 3602172e894db010dbd557f10b898f854c44d006
 </html>
